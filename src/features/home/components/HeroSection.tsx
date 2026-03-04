@@ -9,7 +9,7 @@ interface HeroSectionProps {
   tr: (key: TranslationKeys) => string;
 }
 
-const PROFILE_IMG = "/Alejandro_perfil.png";
+const PROFILE_IMG = `${import.meta.env.BASE_URL}Alejandro_perfil.png`;
 
 const fadeUp = (delay = 0) => ({
   initial: { opacity: 0, y: 30 } as const,
