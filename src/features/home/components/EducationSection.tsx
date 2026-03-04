@@ -9,7 +9,7 @@ interface EducationSectionProps {
 
 const EDUCATION = [
   { key: "edu.cs" as const, institution: "UCI — Universidad de las Ciencias Informáticas", period: "2008 — 2014" },
-  { key: "edu.it" as const, institution: "IPVCE — Instituto Preuniversitario Vocacional", period: "2005 — 2007" },
+  { key: "edu.it" as const, institution: "IPI — Instituto Politécnico Informática", period: "2005 — 2007" },
 ] as const;
 
 const LANGUAGES = [
