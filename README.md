@@ -131,7 +131,38 @@ Dark and light modes are toggled via the navbar button. The preference is:
 2. Falls back to the system's `prefers-color-scheme`
 3. Persisted on every toggle
 
-## 📄 License
+## � CI/CD & Deployment
+
+The project includes a GitHub Actions workflow that **automatically deploys to GitHub Pages** on every push to `main`.
+
+### Pipeline Overview
+
+```
+push to main → npm ci → tsc + vite build → upload artifact → deploy to GitHub Pages
+```
+
+**Workflow file:** [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml)
+
+| Step | Description |
+|------|-------------|
+| **Checkout** | Clones the repository |
+| **Setup Node** | Installs Node.js 20 with npm cache |
+| **Install** | `npm ci` (clean install from lockfile) |
+| **Build** | `npm run build` (TypeScript type-check + Vite production build) |
+| **Upload** | Uploads `dist/` as a Pages artifact |
+| **Deploy** | Publishes to GitHub Pages environment |
+
+### Setup (one-time)
+
+1. Go to your repo → **Settings** → **Pages**
+2. Under **Source**, select **GitHub Actions**
+3. Push to `main` — the workflow runs automatically
+
+### Live URL
+
+🔗 [https://alrimoreno26.github.io/personal-cv/](https://alrimoreno26.github.io/personal-cv/)
+
+## �📄 License
 
 This project is licensed under the [ISC License](https://opensource.org/licenses/ISC).
 
