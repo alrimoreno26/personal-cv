@@ -6,6 +6,7 @@ A modern, responsive single-page portfolio built with **React 19**, **TypeScript
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?logo=typescript&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?logo=tailwindcss&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-6-646CFF?logo=vite&logoColor=white)
+![Deploy](https://github.com/alrimoreno26/personal-cv/actions/workflows/deploy.yml/badge.svg)
 ![License](https://img.shields.io/badge/License-ISC-green)
 
 ---
